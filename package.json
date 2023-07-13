@@ -1,7 +1,13 @@
 {
-  "name": "teneric-components",
+  "name": "@t-every/teneric-components",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/T-Every/teneric-components.git"
+  },
+  "publishConfig": {
+    "@company:registry": "https://npm.pkg.github.com"
+  },
   "version": "0.1.0",
-  "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^13.0.0",
@@ -39,5 +45,17 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "bugs": {
+    "url": "https://github.com/T-Every/teneric-components/issues"
+  },
+  "homepage": "https://github.com/T-Every/teneric-components#readme",
+  "main": "index.js",
+  "devDependencies": {},
+  "author": "t-every",
+  "license": "ISC",
+  "sideEffects": [
+    "src/index.tsx"
+  ]
 }
