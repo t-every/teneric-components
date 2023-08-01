@@ -1,6 +1,7 @@
 # teneric-components
 
- ````<img alt="teneric-components" src="https://i.imgur.com/XIX7gqb.png"/>`````
+
+ <img alt="teneric-components" src="https://i.imgur.com/XIX7gqb.png"/>
 
 <div align="center">
     <img src="https://badgen.net/npm/v/@t-every/teneric-components" alt="NPM Version" />
