@@ -130,7 +130,7 @@ export default function Home() {
           <div className="w-full max-w-4xl">
             <div className="my-14">
               <h2 className="ml-5 text-2xl font-bold">Examples</h2>
-              <Button text="oi"/>
+              <Button text="oi" padding="5rem"/>
             </div>
           </div>
         </div>

@@ -76,7 +76,8 @@
     "typescript": "^5.0.4"
   },
   "dependencies": {
-    "goober": "^2.1.10"
+    "goober": "^2.1.10",
+    "sass": "^1.65.1"
   },
   "peerDependencies": {
     "react": ">=16",
