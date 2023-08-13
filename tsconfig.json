@@ -16,5 +16,6 @@
     "emitDeclarationOnly": true,
     "rootDir": "src",
     "declarationMap": true
-  }
+  },
+  "include": ["src", "types", "test"]
 }

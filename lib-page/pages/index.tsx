@@ -131,7 +131,17 @@ const Home: NextPage = () => {
           <div className="w-full max-w-4xl">
             <div className="my-14">
               <h2 className="ml-5 text-2xl font-bold">Examples</h2>
-              <Button label="aa" />
+              <Button 
+                text="aa"
+                textColor="black"
+                backgroundColor="#00ac5c"
+                textColorHover="black"
+                backgroundColorHover="#00cfa2"
+                type="submit"
+                letterSpacing="2px"
+                fontSize="14px"
+                fontWeight="600"
+              />
             </div>
           </div>
         </div>
