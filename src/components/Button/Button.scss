@@ -1,5 +1,3 @@
-@import "~src/styles/variables.scss";
-
 .button_container {
   position: relative;
   display: inline-block;
@@ -10,7 +8,7 @@
   transition: 0.5s;
   letter-spacing: 4px;
   cursor: pointer;
-  padding: 1rem;
+  padding: 5rem;
   width: 100%;
   border-radius: 5px;
 }

@@ -7,13 +7,13 @@
     "components",
     "next"
   ],
-  "main": "dist/index.js",
-  "types": "dist/index.d.ts",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
   "files": [
-    "headless",
-    "dist",
-    "src"
+    "dist"
   ],
+  "type": "module",
+  "types": "dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/T-Every/teneric-components.git"
@@ -26,7 +26,8 @@
   },
   "scripts": {
     "start": "tsup --watch",
-    "build": "tsup",
+    "build": "rollup -c --bundleConfigAsCjs",
+    "dev": "rollup -c -w --bundleConfigAsCjs",
     "test": "jest --runInBand",
     "setup": "pnpm i && cd lib-page && pnpm i && cd .. && pnpm run link",
     "link": "pnpm link ./lib-page/node_modules/react && pnpm link ./lib-page/node_modules/react-dom",
@@ -38,54 +39,37 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "bugs": {
     "url": "https://github.com/T-Every/teneric-components/issues"
   },
   "homepage": "https://github.com/T-Every/teneric-components#readme",
-  "devDependencies": {
-    "@jest/types": "^28.1.3",
-    "@size-limit/preset-small-lib": "^7.0.8",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@types/jest": "^28.1.5",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@types/testing-library__jest-dom": "^5.14.5",
-    "csstype": "^3.1.0",
-    "jest": "^28.1.3",
-    "jest-environment-jsdom": "^28.1.3",
-    "prettier": "^2.7.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "size-limit": "^7.0.8",
-    "ts-jest": "^28.0.6",
-    "tslib": "^2.4.0",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "goober": "^2.1.10",
-    "sass": "^1.65.1"
-  },
-  "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
   "author": "t-every",
   "license": "ISC",
-  "sideEffects": [
-    "src/index.tsx"
-  ]
+  "devDependencies": {
+    "@mdx-js/react": "^2.3.0",
+    "@rollup/plugin-commonjs": "^25.0.4",
+    "@rollup/plugin-node-resolve": "^15.1.0",
+    "@rollup/plugin-typescript": "^11.1.2",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.3",
+    "@types/react": "^18.2.20",
+    "css-loader": "^6.8.1",
+    "html-webpack-plugin": "^5.5.3",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^29.6.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "rollup": "^3.28.0",
+    "rollup-plugin-dts": "^5.3.1",
+    "rollup-plugin-postcss": "^4.0.2",
+    "sass": "^1.65.1",
+    "sass-loader": "^13.3.2",
+    "style-loader": "^3.3.3",
+    "tslib": "^2.6.1",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  }
 }
