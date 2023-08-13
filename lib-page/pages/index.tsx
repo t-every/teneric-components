@@ -7,6 +7,7 @@ import Checkmark from '../assets/checkmark.svg';
 import { Footer } from '../components/sections/footer';
 
 import packageInfo from '../../package.json';
+import { NextPage } from 'next';
 const version = packageInfo.version;
 
 const Feature: React.FC<{ children?: React.ReactNode }> = ({ children }) => (
@@ -81,7 +82,7 @@ const Features = () => (
   </div>
 );
 
-export default function Home() {
+const Home: NextPage = () => {
   return (
     <div className="overflow-x-hidden">
       <NextSeo
@@ -130,7 +131,7 @@ export default function Home() {
           <div className="w-full max-w-4xl">
             <div className="my-14">
               <h2 className="ml-5 text-2xl font-bold">Examples</h2>
-              <Button text="oi"/>
+              <Button label="aa" />
             </div>
           </div>
         </div>
@@ -139,3 +140,5 @@ export default function Home() {
     </div>
   );
 }
+
+export default Home;
