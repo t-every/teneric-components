@@ -137,7 +137,7 @@ const Home: NextPage = () => {
                 backgroundColor="#00ac5c"
                 textColorHover="black"
                 backgroundColorHover="#00cfa2"
-                type="submit"
+                // type="submit"
                 letterSpacing="2px"
                 fontSize="14px"
                 fontWeight="600"
