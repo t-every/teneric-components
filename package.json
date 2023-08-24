@@ -1,7 +1,7 @@
 {
   "name": "teneric-components",
   "description": "A tevery library. Amazing and customizable components.",
-  "version": "0.1.6",
+  "version": "0.1.5",
   "keywords": [
     "react",
     "components",
@@ -9,6 +9,7 @@
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "module": "dist/esm/index.js",
   "files": [
     "headless",
     "dist",
@@ -38,52 +39,30 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
   "bugs": {
     "url": "https://github.com/T-Every/teneric-components/issues"
   },
   "homepage": "https://github.com/T-Every/teneric-components#readme",
-  "devDependencies": {
-    "@jest/types": "^28.1.3",
-    "@size-limit/preset-small-lib": "^8.2.6",
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.3.0",
-    "@types/jest": "^28.1.5",
-    "@types/react": "^18.0.15",
-    "@types/react-dom": "^18.0.6",
-    "@types/testing-library__jest-dom": "^5.14.5",
-    "csstype": "^3.1.0",
-    "jest": "^28.1.3",
-    "jest-environment-jsdom": "^28.1.3",
-    "prettier": "^2.7.1",
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "size-limit": "^7.0.8",
-    "ts-jest": "^28.0.6",
-    "tslib": "^2.4.0",
-    "tsup": "^6.7.0",
-    "typescript": "^5.0.4"
-  },
-  "dependencies": {
-    "goober": "^2.1.10"
-  },
-  "peerDependencies": {
-    "react": ">=16",
-    "react-dom": ">=16"
-  },
   "author": "tevery",
   "license": "ISC",
+  "devDependencies": {
+    "@swc/core": "^1.3.76",
+    "@testing-library/react": "^14.0.0",
+    "@types/jest": "^29.5.3",
+    "@types/react": "^18.2.20",
+    "@types/react-dom": "^18.2.7",
+    "csstype": "^3.1.2",
+    "goober": "^2.1.13",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "tslib": "^2.6.1",
+    "tsup": "^7.2.0",
+    "typescript": "^5.1.6"
+  },
+  "peerDependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
   "sideEffects": [
     "src/index.tsx"
   ]
