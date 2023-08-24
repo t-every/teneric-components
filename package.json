@@ -1,28 +1,37 @@
 {
   "name": "teneric-components",
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "version": "0.1.3",
+  "description": "A tevery library. Amazing and customizable components.",
+  "version": "0.2.4",
+  "author": "T-EVERY",
+  "repository": "T-Every/teneric-components",
   "keywords": [
     "react",
-    "components",
+    "notifications",
+    "toast",
     "next"
   ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
+  "exports": {
+    "./package.json": "./package.json",
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js"
+    },
+    "./headless": {
+      "types": "./headless/index.d.ts",
+      "import": "./headless/index.mjs",
+      "require": "./headless/index.js"
+    }
+  },
   "files": [
     "headless",
     "dist",
     "src"
   ],
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/T-Every/teneric-components.git"
-  },
   "engines": {
     "node": ">=10"
-  },
-  "publishConfig": {
-    "@company:registry": "https://npm.pkg.github.com"
   },
   "scripts": {
     "start": "tsup --watch",
@@ -38,25 +47,9 @@
       "react-app/jest"
     ]
   },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  },
-  "bugs": {
-    "url": "https://github.com/T-Every/teneric-components/issues"
-  },
-  "homepage": "https://github.com/T-Every/teneric-components#readme",
   "devDependencies": {
     "@jest/types": "^28.1.3",
-    "@size-limit/preset-small-lib": "^8.2.6",
+    "@size-limit/preset-small-lib": "^7.0.8",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.3.0",
     "@types/jest": "^28.1.5",
@@ -81,10 +74,5 @@
   "peerDependencies": {
     "react": ">=16",
     "react-dom": ">=16"
-  },
-  "author": "tevery",
-  "license": "ISC",
-  "sideEffects": [
-    "src/index.tsx"
-  ]
+  }
 }
