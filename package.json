@@ -45,7 +45,7 @@
   "homepage": "https://github.com/T-Every/teneric-components#readme",
   "author": "tevery",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@swc/core": "^1.3.76",
     "@testing-library/react": "^14.0.0",
     "@types/jest": "^29.5.3",
