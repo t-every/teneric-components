@@ -1,5 +1,5 @@
 import { css, setup } from 'goober';
-import { ButtonProps } from '../../main/types';
+import { ButtonProps } from '../main/types';
 import * as React from 'react';
 
 setup(React.createElement);
