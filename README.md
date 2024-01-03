@@ -8,7 +8,7 @@
     <img src="https://badgen.net/bundlephobia/minzip/@t-every/teneric-components" alt="minzipped size"/>
 </div>
 <br />
-<div align="center"><strong>A T-Every library.</strong></div>
+<div align="center"><strong>A tevery library.</strong></div>
 <div align="center">Easy to use, customizable.</div>
 <br />
 <div align="center">
